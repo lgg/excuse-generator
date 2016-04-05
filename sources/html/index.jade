@@ -1,0 +1,66 @@
+doctype html
+html(lang="ru")
+    head
+        title Генератор отмазок
+        meta(charset="UTF-8")
+        meta(content='width=device-width, initial-scale=1, maximum-scale=1', name='viewport')
+        meta(name='description',
+            content="Генератор оправданий для фрилансера")
+        meta(name='keywords',
+            content="Генератор отмазок, отмазки, отговорки, оправдания")
+        link(rel='author',
+            href='https://github.com/littleguga')
+        <!-- Fow social parsing -->
+        meta(property="og:type",
+            content="website")
+        meta(property="og:title",
+            content="Генератор отмазок")
+        meta(property="og:site_name",
+            content="Генератор отмазок")
+        meta(property="og:url",
+            content="https://littleguga.github.io/excuse-generator")
+        meta(property="og:description",
+            content="Генератор оправданий для фрилансера")
+        meta(property="og:image",
+            content="http://littleguga.github.io/excuse-generator/build/img/social_img.png")
+        meta(property="og:image:secure_url",
+            content="https://littleguga.github.io/excuse-generator/build/img/social_img.png")
+        meta(property="og:image:type",
+            content="image/png")
+        meta(property="og:image:width",
+            content="1200")
+        meta(property="og:image:height",
+            content="630")
+        <!-- Favicons -->
+        link(rel="shortcut icon", href="build/img/favicon/favicon.ico")
+        link(rel="icon", sizes="16x16 32x32", href="build/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon-precomposed", href="build/img/favicon/152.png")
+        <!-- Styles -->
+        link(rel='stylesheet', href='build/css/style.min.css')
+        link(rel='stylesheet', href='build/material/material.min.css')
+        <!-- Scripts -->
+        script(type='text/javascript' src='build/js/js.min.js')
+        script(type='text/javascript' src='build/material/material.min.js')
+    body
+        div.mdl-layout.mdl-js-layout
+            div.mdl-layout__content.flex-top
+                div.container.flex-center.flex-column.full-width
+                    h1.text-center Генератор отмазок
+                    div.result-wrap.container.flex-center.full-width
+                        div.mdl-card.mdl-shadow--2dp.card-result
+                            div.mdl-card__title.mdl-card--expand.flex-center
+                                div#result.result Здесь будет отмазка
+                            div.mdl-card__actions.mdl-card--border.flex-center.flex-column
+                                div.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                                    input#name(type="text").mdl-textfield__input
+                                    label(for="token").mdl-textfield__label Введите имя, от кого отмазываемся
+                                button#go.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent.mdl-color--blue-800 Получить отмазку
+            footer.mdl-mini-footer.flex-center.text-center
+                div.mdl-mini-footer__left-section
+                    ul.mdl-mini-footer__link-list
+                        li
+                            span.icon.icon-github
+                            a(href="https://github.com/littleguga/excuse-generator") Исходный код на github
+                        li
+                            span.icon.icon-star
+                            a(href="https://vk.com/wall-51016572_486907") Вдохновлено постом на Десигне
