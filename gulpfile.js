@@ -47,7 +47,7 @@ gulp.task('build', ['buildJs',
     'buildStylus',
     'buildHtml',
     'buildJade',
-    'buildFonts',
+    //'buildFonts',
     'buildImg',
     'buildFavicon',
     'buildMaterial'
