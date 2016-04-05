@@ -4,7 +4,7 @@
 
 ## Суть
 
-[Сайт автоматически гененирует отмазку](https://littleguga.github.io/excuse-generator)
+[Сайт автоматически гененирует отмазку](https://littleguga.github.io/excuse-generator/)
 
 ![ScreenShot](./screenshot.png)
 
