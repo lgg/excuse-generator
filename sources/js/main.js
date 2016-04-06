@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //On enter press
-    name.addEventListener("keypress", function(event){
+    document.body.addEventListener("keypress", function(event){
         if (event.which == 13 || event.keyCode == 13) {
             generate();
         }
