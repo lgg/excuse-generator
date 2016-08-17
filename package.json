@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/littleguga/excuse-generator.git"
+    "url": "https://github.com/lgg/excuse-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/littleguga/excuse-generator/issues"
+    "url": "https://github.com/lgg/excuse-generator/issues"
   },
-  "homepage": "https://littleguga.github.io/excuse-generator",
-  "author": "littleguga",
+  "homepage": "https://lgg.github.io/excuse-generator",
+  "author": "lgg",
   "license": "MIT",
   "dependencies": {
     "material-design-lite": "^1.1.3"
