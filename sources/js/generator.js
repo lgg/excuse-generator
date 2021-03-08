@@ -37,19 +37,11 @@ var Generator = {
     insertName: function (str, name) {
         return str.replace('[name]', name);
     },
-    needComma: function (str) {
-        var substring = "как";
-        return str.indexOf(substring) === 0;
-    },
     concat: function (str1, str2, separator) {
-        if(this.needComma(str2)){
-            return str1 + ", " + str2;
-        }else{
-            if (separator) {
-                return str1 + separator + " " + str2;
-            } else {
-                return str1 + " " + str2;
-            }
+        if (separator) {
+            return str1 + separator + " " + str2;
+        } else {
+            return str1 + " " + str2;
         }
     },
     concatAll: function (arr) {
