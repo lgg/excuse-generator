@@ -5,7 +5,7 @@ var Generator = {
     generate: function (name) {
         var t = this;
         var text = [];
-        
+        var customName = !!name;
         //Check if we have empty name
         if(!name){
             name = t.choose(Excuses.names)
@@ -13,7 +13,7 @@ var Generator = {
 
         //Get hello part
         text.push(
-            t.insertName(t.choose(Excuses.hello), name)
+            t.insertName(t.choose(Excuses.hello), name, customName)
         );
 
         //Get fail
@@ -34,7 +34,9 @@ var Generator = {
         //Create single string
         return t.concatAll(text);
     },
-    insertName: function (str, name) {
+    insertName: function (str, name, customName) {
+        var nameComesFirst = /^.+\[name\]/.test(str);
+        name = (nameComesFirst && !customName) ? name.toLowerCase() : name;
         return str.replace('[name]', name);
     },
     concat: function (str1, str2, separator) {
